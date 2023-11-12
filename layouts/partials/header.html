@@ -8,8 +8,10 @@
                     Sugoi</span></a></li>
         {{ if .IsTranslated }}
             {{ range .Translations }}
-		        <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
-	        {{ end}}
+	    	<li class="u-pull-right">
+           		<a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+        	</li>       
+	    {{ end}}
         {{ end }}
         
         {{ range .Site.Menus.nav }}
