@@ -4,9 +4,8 @@
             Sugoi</span></label>
     <input type="checkbox" id="drop" />
     <ul class="menu">
-        <li><a href="{{ .Site.BaseURL }}"><span><i class="fas fa-fire" aria-hidden="true"></i>
-                    Sugoi</span></a></li>
-        
+        <li><a href="{{ .Site.BaseURL }}"><span><i class="bi bi-house-gear" aria-hidden="true"></i>
+                    Home</span></a></li>
         {{ range .Site.Menus.nav }}
         <li class="u-pull-right">
             <a href="{{ .URL | absLangURL }}" class="Members">
