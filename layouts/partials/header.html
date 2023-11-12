@@ -6,6 +6,12 @@
     <ul class="menu">
         <li><a href="{{ .Site.BaseURL }}"><span><i class="fas fa-fire" aria-hidden="true"></i>
                     Sugoi</span></a></li>
+        {{ if .IsTranslated }}
+            {{ range .Translations }}
+		        <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+	        {{ end}}
+        {{ end }}
+        
         {{ range .Site.Menus.nav }}
         <li class="u-pull-right">
             <a href="{{ .URL | absLangURL }}" class="Members">
