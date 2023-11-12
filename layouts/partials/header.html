@@ -6,13 +6,7 @@
     <ul class="menu">
         <li><a href="{{ .Site.BaseURL }}"><span><i class="fas fa-fire" aria-hidden="true"></i>
                     Sugoi</span></a></li>
-        {{ if .IsTranslated }}
-            {{ range .Translations }}
-	    	<li class="u-pull-right">
-           		<a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
-        	</li>       
-	    {{ end}}
-        {{ end }}
+                {{ end }}
         
         {{ range .Site.Menus.nav }}
         <li class="u-pull-right">
@@ -21,5 +15,12 @@
             </a>
         </li>
         {{ end }}
+        {{ if .IsTranslated }}
+            {{ range .Translations }}
+	    	<li class="u-pull-right">
+           		<a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+        	</li>       
+	    {{ end}}
+
     </ul>
 </nav>
