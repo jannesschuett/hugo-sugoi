@@ -1,6 +1,6 @@
 <footer>
     <span class="copyright">
         {{ with .Site.Copyright | default "&copy;" }} {{ . | safeHTML }} {{ now.Format "2006"}} {{ end }}
-        <a href="{{< ref "/impressum" >}}" title="hugo-sugoi" alt="hugo-sugoi" target="_blank">Impressum</a>
+        <a href="{{ .Site.Home.Permalink }}" title="hugo-sugoi" alt="hugo-sugoi">Impressum</a>
     </span>
 </footer>
