@@ -1,3 +1,5 @@
+This is a complete clone from hugo-sugoi with minimal changes to fit the SchunterNet e. V. the organization I use this for.
+
 # Sugoi - An Ultra Minimal Hugo Theme
 
 Hugo-Sugoi is an ultra minimal theme built for personal blogs and can be used for learning hugo theme designing. Feel free to use this theme for creating an awesome hugo theme.
