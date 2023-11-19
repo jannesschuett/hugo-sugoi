@@ -1,6 +1,6 @@
 a {
   color: #111;
-  text-decoration: none;
+  text-decoration: underline dotted;
   font-weight: 500;
 }
 
