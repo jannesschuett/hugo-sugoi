@@ -20,7 +20,7 @@
 <link rel="shortcut icon" href="/{{ .Site.Params.favicon }}" type="image/png" />
 {{ end }}
 
-{{ if .Site.GoogleAnalytics }}
+{{ if .Site.Config.Services.GoogleAnalytics.ID }}
 {{ template "_internal/google_analytics.html" . }}
 {{ end }}
 
